@@ -4,7 +4,7 @@ pipeline {
     stage("verify tooling") {
       steps {
         sh '''
-         cd /home/vishal/agent/workspace/Jenkins-docker
+         cd /var/lib/jenkins/workspace/Jenkins-docker
          docker compose ps
          docker compose down
          docker compose ps
