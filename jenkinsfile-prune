@@ -1,5 +1,5 @@
 pipeline {
-  agent {label 'ubuntu20'}
+  agent  any
   stages {
     stage("verify tooling") {
       steps {
